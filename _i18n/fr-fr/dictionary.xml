@@ -70,7 +70,6 @@
   <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">Limitations de LA HAUTE DISPONIBILITÉ</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">Les paires HAUTE DISPONIBILITÉ ne sont pas prises en charge dans certaines régions.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">Affichez la liste des régions Azure prises en charge</block>
-  <block id="1e6996b39daf779b565c50c8411fbc8d" category="paragraph"><block ref="8e36f0f32d75ebd3c7851e726c538544" category="inline-link-rx"></block>.</block>
   <block id="00341a78c2eaf7d804cfe027a2f67870" category="summary">Cloud Volumes ONTAP présente des limites de configuration de stockage dans AWS pour assurer la fiabilité des opérations. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="6870aed8e6dfc4f093d5b5c6f8a4d81c" category="doc">Limites de stockage dans AWS</block>
   <block id="b3dfe19c7d46d1f8795ac17bf3d5a909" category="paragraph">Cloud Volumes ONTAP présente des limites de configuration du stockage pour assurer des opérations fiables. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
@@ -372,7 +371,6 @@ Paires HAUTE DISPONIBILITÉ : 18 dans un nœud ^1^</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">Cloud Volumes ONTAP peut être exécuté sur une instance EC2 réservée ou à la demande. Les solutions utilisant d'autres types d'instances ne sont pas prises en charge.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">Régions prises en charge</block>
   <block id="a3f8304ab1695053d71855c60f8abf63" category="inline-link">Régions Cloud volumes Global</block>
-  <block id="4375839c669e051e5f2a8de11ba0c5d0" category="paragraph">Pour la prise en charge de chaque région AWS, consultez la section<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="5520e32d61a58dff51fc6730939c3baf" category="summary">Cloud Volumes ONTAP présente des limites de configuration du stockage dans Google Cloud pour assurer la fiabilité des opérations. Pour des performances optimales, ne configurez pas votre système aux valeurs maximales.</block>
   <block id="c73908091fadeb9dec16abab42821644" category="doc">Limites de stockage dans Google Cloud</block>
   <block id="b5110a96ee31f0d84f4df3d51e44588e" category="paragraph">Pour certaines configurations, les limites de disque vous empêchent d'atteindre la limite de capacité en utilisant uniquement des disques. Vous pouvez atteindre la limite de capacité de<block ref="91a4fc4ecb983c2fca7588f26341e223" category="inline-link-rx"></block>. Pour plus de détails, reportez-vous aux limites de disques ci-dessous.</block>
@@ -481,7 +479,6 @@ Paires HAUTE DISPONIBILITÉ : 18 dans un nœud ^1^</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">Si vous disposez d'un système existant fonctionnant sur ce type de machine, vous pouvez continuer à l'utiliser, mais nous vous recommandons de passer au type de machine n2-standard-4.</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">Les performances d'écriture améliorées sont activées lorsque l'utilisation de disques SSD est utilisée.</block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">L'interface BlueXP affiche un type de machine supplémentaire pris en charge pour Standard et BYOL : n1-highmem-4. Toutefois, ce type de machine n'est pas destiné aux environnements de production. Nous l'avons disponible pour un environnement de laboratoire spécifique uniquement.</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">Pour la prise en charge par région Google Cloud Platform, rendez-vous sur<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="e7089e61c962cfdae0de5b1d0748b6f2" category="list-text">Cloud Volumes ONTAP peut être exécuté sur une instance de machine virtuelle réservée ou à la demande auprès de votre fournisseur cloud. Les solutions qui utilisent d'autres types d'instances VM ne sont pas prises en charge.</block>
   <block id="8e8865183ac138d80e1eac90bc023d09" category="list-text">À partir de la version 9.13.0 du logiciel Cloud Volumes ONTAP, _Flash cache_, une vitesse d'écriture élevée et une unité de transmission maximale (MTU) supérieure de 1 8,896 octets sont disponibles pour les instances de déploiement de paires haute disponibilité suivantes :</block>
   <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">Lancement d'une paire HA dans Google Cloud</block>
@@ -641,7 +638,6 @@ Paires HAUTE DISPONIBILITÉ : 18 dans un nœud ^1^</block>
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">Si vous choisissez l'un de ces types de VM lorsque vous déployez un nouveau système Cloud Volumes ONTAP, vous ne pouvez pas passer à un autre type de VM qui _n'utilise pas_ un SSD Ultra pour VNVRAM. Par exemple, vous ne pouvez pas passer de E8ds_v4 à E8s_v3, mais vous pouvez passer de E8ds_v4 à E32ds_v4 car ces deux types de VM utilisent des SSD Ultra.</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">Inversement, si vous avez déployé Cloud Volumes ONTAP à l'aide d'un autre type de VM, vous ne pourrez pas passer à un type de VM utilisant un SSD Ultra pour VNVRAM. Par exemple, vous ne pouvez pas passer de E8s_v3 à E8ds_v4.</block>
   <block id="07daff7fe86cfb582b0c246d7cefb754" category="list-text">Lors de l'utilisation d'un système à un seul nœud, la vitesse d'écriture élevée est prise en charge avec tous les types d'instances. Vous pouvez activer la vitesse d'écriture élevée depuis BlueXP pendant le déploiement ou à tout moment après.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
-  <block id="7c7627c6477255acb2239bd1be90f346" category="list-text">Pour la prise en charge par région Azure, consultez la section<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">Lors du déploiement de Cloud Volumes ONTAP en tant que paire HA dans Azure, vous pouvez choisir l'une des configurations suivantes.</block>
   <block id="b80fdfea42d505d96700af73261164a3" category="section-title">Paires HA avec un blob de pages</block>
   <block id="2cdb7e570d475b109f07d648d27eec58" category="list-text">DS5_v2 ^1^</block>
@@ -717,4 +713,8 @@ Paires HAUTE DISPONIBILITÉ : 18 dans un nœud ^1^</block>
   <block id="5b538967bf32882139a5639328eec6d7" category="doc">Notes de version de Cloud Volumes ONTAP 9.13.0</block>
   <block id="c3647f40e3574e0e6f49e20c19135bfa" category="section-title">Limites de l'utilisation des extensions de machines virtuelles Azure</block>
   <block id="9d167ed7d52d81da8d83590ec3b5a4af" category="paragraph">Dans un déploiement, Cloud Volumes ONTAP ne prend pas en charge les extensions de machines virtuelles et les applications de machines virtuelles Azure. L'utilisation d'Cloud Volumes ONTAP dans Azure avec des extensions de machine virtuelle entraîne des retards dans les opérations, et NetApp recommande de les éviter.</block>
+  <block id="0890aa708cef7529c2bd35cb7d2895df" category="paragraph">Pour la prise en charge des régions AWS, voir<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="f0de068c81c765820aca0fa8fe017396" category="list-text">Pour la prise en charge des régions Azure, voir<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="ef9be83cb59b0572a3581a6724316e48" category="list-text">Pour obtenir une prise en charge par région de Google Cloud Platform, consultezla section<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
+  <block id="d798d4963d0ac509a1bda5483d9b9a52" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block>.</block>
 </blocks>
